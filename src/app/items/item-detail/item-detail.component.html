@@ -1,0 +1,27 @@
+<div class="itemDetailComponent">
+  <div>
+    <div>
+      <h3>{{item.title}}</h3>
+      <div class="buttonList">
+        <a class="btn" (click)="onView()">View</a>
+        <a class="btn" [routerLink]="['edit']">Edit</a>
+        <a class="btn" (click)="onDelete()">Delete</a>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div>
+        <h4>Image:</h4>
+        <br>
+        <img [src]="item.image" alt="{{ item.title }}" class="detailImg">
+      </div>
+      <div>
+        <h4>Description:</h4>
+        <br>
+        <span class="label-value">{{item.description}}</span>
+      </div>
+    </div>
+  </div>
+</div>
+

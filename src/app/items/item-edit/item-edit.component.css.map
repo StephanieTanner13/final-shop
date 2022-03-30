@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAA;EACA,MAAM,EAAE,eAAe;EACvB,MAAM,EAAE,GAAG;CACd;;AACD,AAAA,IAAI,AAAA,MAAM,CAAA;EACN,gBAAgB,EAAE,0BAA0B;CAC/C",
+    "sources": [
+        "item-edit.component.scss"
+    ],
+    "names": [],
+    "file": "item-edit.component.css"
+}

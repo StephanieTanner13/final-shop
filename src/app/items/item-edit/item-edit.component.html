@@ -1,0 +1,67 @@
+<div class="panel panel-default">
+  <div class="panel-body">
+
+    <form id="item-edit" (ngSubmit)="onSubmit(f)" #f="ngForm">
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <label for="title">Item Title:</label>
+          <input
+            type="text"
+            id="title"
+            class="form-control"
+            size="120"
+            max="120"
+            name="title"
+            #title = "ngModel"
+            [ngModel]="item?.title"
+            required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <label for="description">Item Description:</label>
+          <input
+            type="text"
+            id="description"
+            class="form-control"
+            size="120"
+            max="255"
+            name="description"
+            [ngModel]="item?.description"
+            required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <label for="image">Item image:</label>
+          <input
+            type="text"
+            id="image"
+            class="form-control"
+            size="150"
+            max="255"
+            name="image"
+            [ngModel]="item?.image"
+            #image = "ngModel"
+            required
+            placeholder='../assets/images/desert-sunset.jpg'>
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <button class="btn" type="submit" [disabled]="!f.valid">Save</button>
+          <button class="btn" type="button" (click)="onCancel()">Cancel</button>
+        </div>
+      </div>
+      <div class="row help-block alert alert-danger" *ngIf="(!title.valid && title.touched )|| (!image.valid && image.touched)">
+        All fields are required.
+      </div>
+
+    </form>
+
+  </div>
+</div>
+

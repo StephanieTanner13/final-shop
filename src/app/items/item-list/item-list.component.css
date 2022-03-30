@@ -1,0 +1,30 @@
+.addItem {
+  width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.addItem a {
+  color: black !important;
+  border: 1px solid black;
+  width: 100px;
+}
+
+.addItem a:hover {
+  background-color: rgba(233, 233, 233, 0.543);
+}
+
+.itemList {
+  width: 1000px;
+  padding-top: 3em;
+}
+
+.itemList div {
+  margin-left: auto;
+  margin-right: auto;
+}
+/*# sourceMappingURL=item-list.component.css.map */

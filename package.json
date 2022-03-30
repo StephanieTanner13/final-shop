@@ -1,12 +1,13 @@
 {
-  "name": "final-shop",
+  "name": "app",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "start-server": "nodemon server.js"
   },
   "private": true,
   "dependencies": {
@@ -18,7 +19,21 @@
     "@angular/platform-browser": "~13.2.0",
     "@angular/platform-browser-dynamic": "~13.2.0",
     "@angular/router": "~13.2.0",
-    "rxjs": "~7.5.0",
+    "body-parser": "^1.19.2",
+    "bootstrap": "^3.4.1",
+    "connect-mongodb-session": "^3.1.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "csurf": "^1.11.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "mongodb": "^4.4.1",
+    "mongoose": "^6.2.8",
+    "mongoose-unique-validator": "^3.0.0",
+    "morgan": "^1.10.0",
+    "rxjs": "^6.6.7",
+    "rxjs-compat": "^6.6.7",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
@@ -34,6 +49,19 @@
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "nodemon": "^2.0.15",
     "typescript": "~4.5.2"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.4.",
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephanieTanner13/app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StephanieTanner13/app/issues"
+  },
+  "homepage": "https://github.com/StephanieTanner13/app#readme"
 }

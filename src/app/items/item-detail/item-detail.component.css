@@ -1,0 +1,46 @@
+.itemDetailComponent {
+  clear: both;
+  height: 600px;
+  width: 500px;
+  background-color: white;
+  z-index: 100;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.detailImg {
+  height: auto;
+  width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+h4 {
+  padding-left: 1em;
+}
+
+.btn {
+  border: 1px solid black;
+  margin: 1em;
+  color: black;
+}
+
+.btn:hover {
+  background-color: rgba(233, 233, 233, 0.543);
+}
+
+.buttonList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h3 {
+  text-align: center;
+}
+/*# sourceMappingURL=item-detail.component.css.map */

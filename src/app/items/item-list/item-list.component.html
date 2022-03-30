@@ -1,0 +1,11 @@
+
+  <div class="addItem">
+      <a class="btn" routerLink="new">Add Item</a>
+    </div>
+  <div class="itemList">
+    <div>
+      <app-item-item
+      *ngFor="let item of items"
+      [item]="item"></app-item-item>
+    </div>
+  </div>

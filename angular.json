@@ -3,12 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "final-shop": {
+    "app": {
       "projectType": "application",
       "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        },
         "@schematics/angular:application": {
           "strict": true
         }
@@ -20,18 +17,18 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/final-shop",
+            "outputPath": "dist/app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -72,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "final-shop:build:production"
+              "browserTarget": "app:build:production"
             },
             "development": {
-              "browserTarget": "final-shop:build:development"
+              "browserTarget": "app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "final-shop:build"
+            "browserTarget": "app:build"
           }
         },
         "test": {
@@ -93,13 +90,12 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.css"
             ],
             "scripts": []
           }
@@ -107,5 +103,5 @@
       }
     }
   },
-  "defaultProject": "final-shop"
+  "defaultProject": "app"
 }
